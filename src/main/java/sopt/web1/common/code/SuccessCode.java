@@ -1,4 +1,4 @@
-package sopt.web1.code;
+package sopt.web1.common.code;
 
 import org.springframework.http.HttpStatus;
 

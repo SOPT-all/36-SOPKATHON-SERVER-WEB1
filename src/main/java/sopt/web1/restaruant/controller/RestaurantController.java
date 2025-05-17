@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import sopt.web1.restaruant.dto.StoreResDto;
+import sopt.web1.restaruant.controller.dto.StoreResDto;
 import sopt.web1.restaruant.service.RestaurantService;
 
 @RestController

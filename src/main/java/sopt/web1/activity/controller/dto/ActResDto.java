@@ -1,4 +1,4 @@
-package sopt.web1.activity.dto;
+package sopt.web1.activity.controller.dto;
 
 import lombok.Builder;
 

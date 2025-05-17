@@ -1,12 +1,11 @@
 package sopt.web1.activity.controller.dto;
 
 import lombok.Builder;
-import lombok.Getter;
 
 import java.util.List;
 
 @Builder
-public record BestDto (
+public record BestResDto(
         List<BestItems> bestList
 ) {
     @Builder
