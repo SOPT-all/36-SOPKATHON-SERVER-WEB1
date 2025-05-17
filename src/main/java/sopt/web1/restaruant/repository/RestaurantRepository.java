@@ -8,6 +8,6 @@ import java.util.List;
 
 public interface RestaurantRepository extends JpaRepository<RestaurantEntity, Long> {
 
-    List<RestaurantEntity> findTop3ByOrderByLikeCountDesc();
+    List<RestaurantEntity> findTop10ByOrderByLikeCountDesc();
     List<RestaurantEntity> findByBundleId(int bundleId);
 }
