@@ -8,7 +8,7 @@ import java.util.List;
 
 public interface ActivityRepository extends JpaRepository<ActivityEntity, Long> {
 
-    List<ActivityEntity> findTop10ByOrderByLikesDesc();
+    List<ActivityEntity> findTop10ByOrderByLikeCountDesc();
     List<ActivityEntity> findByBundleId(int bundleId);
 }
 

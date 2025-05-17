@@ -70,7 +70,7 @@ public class HomeService {
                 break;
             case "activity":
 
-                bestItems = activityRepository.findTop10ByOrderByLikesDesc()
+                bestItems = activityRepository.findTop10ByOrderByLikeCountDesc()
                         .stream()
                         .map(a -> new BestResDto.BestItems(
                                 a.getName(),
