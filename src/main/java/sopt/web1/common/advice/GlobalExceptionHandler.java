@@ -7,13 +7,21 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 import org.springframework.web.servlet.NoHandlerFoundException;
 import sopt.web1.code.ErrorCode;
-import sopt.web1.response.ResponseDto;
+import sopt.web1.common.response.ResponseDto;
+import sopt.web1.exception.NotFoundException;
 
 import java.util.HashMap;
 import java.util.Map;
 
 @RestControllerAdvice
 public class GlobalExceptionHandler {
+
+    @ExceptionHandler(NotFoundException.class)
+    public ResponseEntity<ResponseDto<Void>> handlerNotFoundException(NotFoundException e) {
+        return ResponseEntity
+                .status(ErrorCode.NOT_FOUND_ENTITY.getHttpStatus())
+                .body(ResponseDto.fail(ErrorCode.NOT_FOUND_ENTITY));
+    }
 
     // @Valid 예외
     @ExceptionHandler(MethodArgumentNotValidException.class)
