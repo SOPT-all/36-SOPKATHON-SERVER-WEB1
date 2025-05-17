@@ -1,4 +1,4 @@
-package sopt.web1.response;
+package sopt.web1.common.response;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import sopt.web1.code.ErrorCode;
