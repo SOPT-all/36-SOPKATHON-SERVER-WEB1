@@ -13,7 +13,7 @@ public class RestaurantEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private Long id;
 
     @Column(name = "name",nullable = false)
     private String name;
@@ -26,6 +26,9 @@ public class RestaurantEntity {
 
     @Column(name = "phone", nullable = false)
     private String phone;
+
+    @Column(name = "time", nullable = false)
+    private String time;
 
     @Column(name = "category", nullable = false)
     private String category;
