@@ -35,4 +35,7 @@ public class ActivityEntity {
 
     @Column(name = "introduction", nullable = false)
     private String introduction;
+
+    @Column(name = "bundle_id", nullable = false)
+    private int bundleId;
 }
