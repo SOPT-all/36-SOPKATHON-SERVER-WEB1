@@ -37,7 +37,7 @@ public class ActivityEntity {
     private String introduction;
 
     @Column(name = "like_count", nullable = false)
-    private int likes;
+    private int likeCount;
 
     @Column(name = "bundle_id", nullable = false)
     private int bundleId;
