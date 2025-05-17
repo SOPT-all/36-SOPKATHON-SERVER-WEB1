@@ -13,7 +13,7 @@ public class ActivityEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private Long id;
 
     @Column(name = "name", nullable = false)
     private String name;
@@ -35,4 +35,8 @@ public class ActivityEntity {
 
     @Column(name = "introduction", nullable = false)
     private String introduction;
+
+    @Column(name = "likes", nullable = false)
+    private int likes;
+
 }
