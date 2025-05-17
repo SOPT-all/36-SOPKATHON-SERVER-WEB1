@@ -16,7 +16,7 @@ public class RestaurantController {
 
     private final RestaurantService restaurantService;
 
-    @GetMapping("/pick/{restaurantId}")
+    @GetMapping("/pick/restaurant/{restaurantId}")
     public ResponseEntity<StoreResDto> getDetails(
             @PathVariable final Long restaurantId
     ){
