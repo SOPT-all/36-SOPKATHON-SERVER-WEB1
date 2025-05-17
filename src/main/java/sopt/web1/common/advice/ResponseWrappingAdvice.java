@@ -10,7 +10,7 @@ import org.springframework.http.server.ServerHttpResponse;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseBodyAdvice;
 import sopt.web1.code.SuccessCode;
-import sopt.web1.response.ResponseDto;
+import sopt.web1.common.response.ResponseDto;
 
 @RestControllerAdvice
 public class ResponseWrappingAdvice implements ResponseBodyAdvice<Object> {
