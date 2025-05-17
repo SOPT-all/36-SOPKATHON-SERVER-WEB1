@@ -30,4 +30,7 @@ public class RestaurantEntity {
     @Column(name = "category", nullable = false)
     private String category;
 
+    @Column(name = "introduction", nullable = false)
+    private String introduction;
+
 }

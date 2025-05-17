@@ -33,4 +33,6 @@ public class ActivityEntity {
     @Column(name = "description", nullable = false)
     private String description;
 
+    @Column(name = "introduction", nullable = false)
+    private String introduction;
 }
