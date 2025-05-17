@@ -7,5 +7,7 @@ import sopt.web1.restaruant.domain.RestaurantEntity;
 import java.util.List;
 
 public interface RestaurantRepository extends JpaRepository<RestaurantEntity, Long> {
+
+    List<RestaurantEntity> findTop3ByOrderByLikesDesc();
     List<RestaurantEntity> findByBundleId(int bundleId);
 }
