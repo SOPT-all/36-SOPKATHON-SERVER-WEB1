@@ -27,6 +27,9 @@ public class RestaurantEntity {
     @Column(name = "phone", nullable = false)
     private String phone;
 
+    @Column(name = "time", nullable = false)
+    private String time;
+
     @Column(name = "category", nullable = false)
     private String category;
 
@@ -35,5 +38,8 @@ public class RestaurantEntity {
 
     @Column(name = "likes", nullable = false)
     private int likes;
+
+    @Column(name = "bundle_id", nullable = false)
+    private int bundleId;
 
 }

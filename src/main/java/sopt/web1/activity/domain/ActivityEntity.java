@@ -39,4 +39,7 @@ public class ActivityEntity {
     @Column(name = "likes", nullable = false)
     private int likes;
 
+    @Column(name = "bundle_id", nullable = false)
+    private int bundleId;
+
 }
