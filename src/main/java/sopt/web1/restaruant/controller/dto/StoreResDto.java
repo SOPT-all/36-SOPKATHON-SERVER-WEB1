@@ -1,4 +1,4 @@
-package sopt.web1.restaruant.dto;
+package sopt.web1.restaruant.controller.dto;
 
 import lombok.Builder;
 

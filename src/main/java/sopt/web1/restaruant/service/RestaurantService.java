@@ -2,10 +2,10 @@ package sopt.web1.restaruant.service;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
-import sopt.web1.code.ErrorCode;
+import sopt.web1.common.code.ErrorCode;
 import sopt.web1.exception.NotFoundException;
 import sopt.web1.restaruant.domain.RestaurantEntity;
-import sopt.web1.restaruant.dto.StoreResDto;
+import sopt.web1.restaruant.controller.dto.StoreResDto;
 import sopt.web1.restaruant.repository.RestaurantRepository;
 
 @Service

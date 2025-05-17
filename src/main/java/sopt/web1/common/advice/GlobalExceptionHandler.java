@@ -6,7 +6,7 @@ import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 import org.springframework.web.servlet.NoHandlerFoundException;
-import sopt.web1.code.ErrorCode;
+import sopt.web1.common.code.ErrorCode;
 import sopt.web1.common.response.ResponseDto;
 import sopt.web1.exception.NotFoundException;
 

@@ -1,6 +1,6 @@
 package sopt.web1.exception;
 
-import sopt.web1.code.ErrorCode;
+import sopt.web1.common.code.ErrorCode;
 
 public class NotFoundException extends RuntimeException {
     private final ErrorCode errorCode;

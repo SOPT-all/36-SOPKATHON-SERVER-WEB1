@@ -1,4 +1,4 @@
-package sopt.web1.home;
+package sopt.web1.home.controller.dto;
 
 import lombok.Builder;
 import java.util.List;

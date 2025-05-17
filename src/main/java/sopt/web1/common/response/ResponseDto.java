@@ -1,8 +1,8 @@
 package sopt.web1.common.response;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
-import sopt.web1.code.ErrorCode;
-import sopt.web1.code.SuccessCode;
+import sopt.web1.common.code.ErrorCode;
+import sopt.web1.common.code.SuccessCode;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public record ResponseDto<T>(
