@@ -60,7 +60,7 @@ public class HomeService {
         List<BestResDto> bestList;
         switch (category) {
             case "food":
-                bestItems = restaurantRepository.findTop3ByOrderByLikesDesc()
+                bestItems = restaurantRepository.findTop3ByOrderByLikeCountDesc()
                         .stream()
                         .map(r -> new BestResDto.BestItems(
                                 r.getName(),
